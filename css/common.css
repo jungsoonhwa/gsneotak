@@ -56,6 +56,7 @@ article, aside, hgroup, header, footer, figure, figcaption, nav, section,time, m
 .mt80{margin-top:80px !important}
 .mt95{margin-top:95px !important}
 .mt100{margin-top:100px !important}
+.mt130{margin-top:130px !important}
 .mr5{margin-right:5px !important}
 .mr10{margin-right:10px !important}
 .mr15{margin-right:15px !important}
@@ -93,6 +94,7 @@ article, aside, hgroup, header, footer, figure, figcaption, nav, section,time, m
 .pt20 {padding-top:20px !important}
 .pt30 {padding-top:30px !important}
 .pt25 {padding-top:25px !important}
+.pt150 {padding-top:150px !important}
 
 .pb15{padding-bottom:15px !important}
 .pb10{padding-bottom:10px !important}
@@ -102,6 +104,7 @@ article, aside, hgroup, header, footer, figure, figcaption, nav, section,time, m
 
 .borT {border-top:1px solid #222 !important}
 .borB {border-bottom:1px solid #222 !important}
+.borNor {border-right:0px solid #222 !important}
 .grayBox {padding:20px 30px; border:1px solid #e1e1e1; background:#f5f5f5; line-height:28px; letter-spacing:-0.5px;}
 .subBox {padding:15px 30px 17px 24px; border:1px solid #e1e1e1; border-top:0;}
 .roundBox {width:900px; padding:5px 0 0; background:url('../img/icon/roundBoxT_bg.png') no-repeat 0 0;}
@@ -157,6 +160,7 @@ article, aside, hgroup, header, footer, figure, figcaption, nav, section,time, m
 .cf11{color:#f1163f !important} 
 .cfff{color:#fff !important} 
 .c1d6{color:#1d60af !important} 
+.c_orange{color:#f56f21 !important} 
 .fs12  {font-size:12px !important} 
 .fs13 {font-size:13px !important} 
 .fs14 {font-size:14px !important} 
@@ -165,10 +169,13 @@ article, aside, hgroup, header, footer, figure, figcaption, nav, section,time, m
 .fs20{font-size:20px !important}
 .fs24 {font-size:24px !important} 
 .fs26 {font-size:26px !important} 
+.fs40 {font-size:40px !important} 
 .let05{letter-spacing:-0.5px !important} 
 .let1{letter-spacing:-1px !important} 
 .let0{letter-spacing:0 !important} 
 ul.fs14 li{font-size:14px !important} 
+.f-nomal{font-weight: 400; }
+.f-700{font-weight: 700; }
 
 /* textType */
 .sTit{font-size:22px; color:#222; padding:15px 0 0 20px; font-weight:bold; line-height:1.2; letter-spacing:-0.5px; background:url('../img/icon/sTit_bu1.png') no-repeat 0 0;}
@@ -177,6 +184,7 @@ ul.fs14 li{font-size:14px !important}
 .sBuTitB2.fs16{font-size:16px}
 .sBuTit {font-size:18px; color:#222; padding:14px 0 0; line-height:28px; background:url('../img/icon/buTxt_bu.gif') no-repeat 0 0;}
 .sBuTxt {font-size:14px; color:#222; padding:14px 0 0; line-height:23px; background:url('../img/icon/buTxt_bu.gif') no-repeat 0 0;}
+.sBuTxt-s {font-size:14px; color:#222; padding:14px 0 0; line-height:23px; background:url('../img/icon/nemoG_bu.gif') no-repeat 0 0;}
 .stxt {font-size:13px; color:#666; line-height:22px; letter-spacing:-0.5px;}
 .stxt2 {font-size:14px; color:#666; line-height:24px}
 .ptxt {font-size:14px; color:#222; line-height:24px; letter-spacing:-0.5px;}
@@ -197,6 +205,8 @@ ul.fs14 li{font-size:14px !important}
 .nemoList2 li{font-size:16px; color:#222; font-weight:bold;padding: 0 0 0 10px; line-height:28px; letter-spacing:-0.5px; background:url('../img/icon/nemoList_bu.gif') no-repeat 0 14px;}
 .nemoList.point li{font-size:14px; color:#222;}
 .nemoList.fs14 li{font-size:14px;}
+.nemoList.fs12 li{font-size:12px;}
+.nemoList.f-nomal li{font-weight: 400;}
 .nemoList.line20 li{line-height:20px; background-position:0 8px;}
 .nemoTx {font-size:14px; color:#666; padding:0 0 0 10px; letter-spacing:-0.5px; background:url('../img/icon/nemoList_bu.gif') no-repeat 0 14px;}
 .nemoTx.line20{background-position:0 8px;}
@@ -212,6 +222,7 @@ ul.fs14 li{font-size:14px !important}
 .bulbTx.type2 {background:url('../img/icon/bulbBu2.png') no-repeat 0 2px; width:150px;}
 .workTx {font-size:18px; color:#1d60af; font-weight:bold; padding:0 0 2px 26px; margin:0 40px 0 0;background:url('../img/icon/workTx_bu.png') no-repeat 0 2px;}
 .diaTx {font-size:14px; color:#222; padding:0 0 0 20px; background:url('../img/icon/diamon_bu.gif') no-repeat 0 7px;}
+.d-flex{display: flex;justify-content: space-between;}
 
 
 
