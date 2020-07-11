@@ -24,11 +24,11 @@ a.directBt {position: absolute; top: 0; left:0; width: 100%; height: 60px; line-
 
 .gnbShadow {position:fixed; top:0; left:250px; width:6px;height:100%; background:url('../img/icon/gnb_shadow.png') repeat-y 0 0; z-index:5000}
 /*#cBody {margin-left:200px} */
-#cBody.main .mConW{position:relative;  max-width:1718px; height:1024px; overflow:hidden;} 
-#cBody.main .mConW .mConA{width:740px; height:1024px;padding: 0;}
+#cBody.main .mConW{position:relative;max-width:1718px;height: 1054px;overflow:hidden;} 
+#cBody.main .mConW .mConA{width:740px;height: 1124px;padding: 0;}
 #cBody.main .mConW .mConA .visualD{position:absolute; top:0; left:0; width:740px; height:470px;}
 #cBody.main .mConW .mConA .visualD img{width:740px;}
-#cBody.main .mConW .mConA  .mBoxA{position:absolute; top:471px; left:0; width:740px; height:610px;background:#fff;border-left:1px solid #eee}
+#cBody.main .mConW .mConA  .mBoxA{position:absolute;top:471px;left:0;width:740px;height: 620px;background:#fff;border-left:1px solid #eee;}
 #cBody.main .mConW .mConA  .mBoxA .fl
 #cBody.main .mConW .mConA  .mBoxA .fr{ padding: 0;background:#333;height:610px;}
 #cBody.main .mConW .mConA  .mBoxA .fl{background:#fefefe}
@@ -48,12 +48,17 @@ a.directBt {position: absolute; top: 0; left:0; width: 100%; height: 60px; line-
 .down_b h3{margin-bottom: 40px}
 #cBody.main .mConW .mConA .visualD .txtArea {position:absolute; top:72px; left:72px;}
 #cBody.main .mConW .mConA .visualD .txtArea .btn{margin:33px 0 0;}
-#cBody.main .mConW .mConB {position:absolute; top:0; left:740px; width:300px;  height:1024px; z-index:100; overflow:hidden; border-left:1px solid #efefef; border-right:1px solid #efefef;}
+#cBody.main .mConW .mConB {position:absolute;top:0;left:740px;width:300px;height: 1054px;z-index:100;overflow:hidden;border-left:1px solid #efefef;border-right:1px solid #efefef;}
 #cBody.main .mConW .mConB .mBox01{padding:40px 45px 30px;height:400px}
 #cBody.main .mConW .mConB .mBox01 h3{margin-top: 50px; margin-bottom: 30px}
 #cBody.main .mConW .mConB .mBox02{padding: 30px 45px 10px;height:360px;border-top:1px solid #efefef;}
-#cBody.main .mConW .mConB .mBox03{height:200px;border-top:1px solid #efefef;    height: 216px;
-    background: #6399d9;position: relative}
+#cBody.main .mConW .mConB .mBox03{
+    /* height:200px; */
+    border-top:1px solid #efefef;
+    height: 256px;
+    background: #6399d9;
+    position: relative;
+    }
 #cBody.main .mConW .mConB .mBox03 h3{margin-top: 30px; margin-left: 30px}
 #cBody.main .mConW .mConB .con {
     position: absolute;
