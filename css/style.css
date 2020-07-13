@@ -51,8 +51,7 @@ a.directBt {
 
 .utillD .utillL li:first-child {
     width: 100px;
-    ;
-    border-right: 1px solid #efefef
+    border-right:0px solid #efefef
 }
 
 #header h1 {
@@ -77,57 +76,19 @@ a.directBt {
 }
 
 /*#header .gnb li.on{background:#e4e5ec;}*/
-#header .gnb li a {
-    display: block;
-    line-height: 1
-}
 
-#header .gnb li .oneD {
-    height: 34px;
-    padding: 30px 0 0;
-}
-
-#header .gnb li.on .oneD {
-    background: url('../img/icon/gnbHover_bu.png') no-repeat 180px 25px;
-}
-
-#header .gnb li .twoD {
-    position: absolute;
-    top: -1px;
-    left: 250px;
-    width: 200px;
-    /*border-top:1px solid #d3d4da;*/
-    z-index: 1000
-}
-
-#header .gnb li.oneL2 .twoD {
-    top: -386px
-}
-
-#header .gnb li.oneL4 .twoD {
-    top: -111px
-}
-
-#header .gnb li.oneL5 .twoD {
-    top: -166px
-}
-
-#header .gnb li .twoD .depth > a {
-    height: 34px;
-    margin: 20px 14px 0 20px;
-    width: 165px;
-    font-weight: 600;
-    font-size: 14px;
-    border-bottom: 1px solid #777;
-    /*border-bottom:1px solid #d0d1d9; background:#dedfe7;*/
-}
-
-/* border-right:1px solid #d0d1d9; */
-#header .gnb li .twoD .depth > a:hover {
-    color: #0f90da;
-    border-bottom: 1px solid #0f90da;
-    /*background:#575d70; border-right:1px solid #575d70; */
-}
+#header .gnb li a{display:block;  line-height:1}
+#header .gnb li .oneD{height:34px; padding:30px 0 0;}
+#header .gnb li.on .oneD{background:url('../img/icon/gnbHover_bu.png') no-repeat 180px 25px;}
+#header .gnb li .twoD {position:absolute; top:-1px; left:250px; width:200px; border-top:1px solid #d3d4da; z-index:1000}
+#header .gnb li.oneL2 .twoD {top:-386px}
+#header .gnb li.oneL4 .twoD {top:-111px}
+#header .gnb li.oneL5 .twoD {top:-166px}
+#header .gnb li .twoD .depth> a {height:34px; padding:18px 14px 2px 20px; width:165px; font-weight:600;font-size:14px;border-bottom:0px dotted #777;border-bottom:1px solid #d0d1d9; }/* border-right:1px solid #d0d1d9; */
+#header .gnb li .twoD .depth> a:hover  {color: #fff;background:#575d70;border-bottom:1px solid  #575d70;  }
+#header .gnb li .thrD {background:#717684; padding:8px 20px 10px; width:159px; }
+#header .gnb li .thrD a {padding:2px 10px 5px 10px; margin:8px 0; color:#fff;  background:url('../img/icon/gnbLine_bu.gif') no-repeat 0 8px;}
+#header .gnb li .thrD a:hover{font-weight:bold; text-decoration:underline;}
 
 .gnbShadow {
     position: fixed;
@@ -1131,44 +1092,14 @@ a.directBt {
     margin-top: 54px
 }
 
-.cate_list {
-    padding-top: 21px;
-    padding-bottom: 26px;
-    border-right: 0px solid #c9c9c9;
-}
-
-.cate_list ul {
-    overflow: hidden;
-    clear: both;
-    width: 603px;
-}
-
-.cate_list li {
-    padding: 20px 0;
-}
-
-.cate_list li h4 {
-    padding-bottom: 14px
-}
-
-.cate_list li ul {
-    width: 100%;
-    background: none
-}
-
-.cate_list li ul li {
-    padding: 15px 0 6px 20px;
-    font-size: 14px
-}
-
-.cate_list li ul li a {
-    color: #777
-}
-
-.cate_list li ul li a:hover {
-    color: #222
-}
-
+.cate_list{padding-top:21px;padding-bottom:26px;border-right:0px solid #c9c9c9;}
+.cate_list ul{overflow:hidden;clear:both;width:603px;}
+.cate_list li {padding:20px 0;}
+.cate_list li h4{padding-bottom:14px}
+ .cate_list li ul{width:100%;background:none}
+ .cate_list li ul li{padding:15px 0 6px 20px; font-size:14px;float: left; width:150px}
+ .cate_list li ul li a{color:#777}
+ .cate_list li ul li a:hover{color:#222}
 .keeper .ptxt {
     color: #f56f21;
     line-height: 36px;
