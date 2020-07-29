@@ -7,7 +7,13 @@
 header{position: fixed;top: 0;left: 0;right: 0;height: 90px;z-index: 1000;width: 100%;background: #fff;border-bottom: 1px solid #eee;}
 header .PCheader .inner{position: relative;padding-bottom: 38px;width: 1510px;margin: 0 auto;transition-duration: .2s;transition-delay: .2s;}
 header h1{padding: 20px 0 0;}
-header h1 a{display: block;width: 280px;height:55px;font-size: 0;background:url(../../images/common/logoGnb.png) no-repeat 0 0;} 
+header h1 a{display: block;
+    width: 280px;
+    height: 55px;
+    line-height: 2.0;
+    font-size: 20px;
+    padding-left: 80px;
+    font-weight: 700;} 
 header .utilList{position: absolute;top: 33px;left: 280px;width: 1200px; }
 header .utilList:after {content:''; display:block; clear:both;}
 header .utilList li{float: left;width: 20%;text-align: right;}
@@ -233,7 +239,7 @@ i.bgicoFoot.ty4{bottom: 310px;right: 185px;background-position: 0 0;}
 
 .ht320{height: 320px !important;position: relative;}
 
-
+/*
 @media screen and (max-width:1600px){
 	.pcCon .inner, .locationWrap .inner, header .PCheader .inner, .pginner, .PCfooter .inner{width: 1180px;}
 	i.bgico, i.bgicoFoot{display: none;}
@@ -254,4 +260,4 @@ i.bgicoFoot.ty4{bottom: 310px;right: 185px;background-position: 0 0;}
 	.pginner{width: inherit;}
 	.pageTop{position: absolute;right: 18px;bottom: 10px;font-size: 0;width: 28px;height: 28px;background:url(../../images/common/sprite_icon.png) no-repeat -72px 0;background-size:500px 250px;z-index: 10;}
 }
-
+*/
