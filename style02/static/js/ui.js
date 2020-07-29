@@ -170,7 +170,7 @@ $(function(){
 function resizeContents(){
 	width = $('.wrap').width();
 	widthRt = $('.pcCon .inner').css('margin-right');
-	if (width > 1600) {
+	if (width > 1200) {
 	  $('.sideBox').parent().parent().addClass('sideCon');
 	  $('.sideBox').parent().parent().removeClass('section');
 	  $('.sideCon').css('right', widthRt);
