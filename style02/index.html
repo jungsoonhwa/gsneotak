@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8" />
+	<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+	<meta property="og:image" content="static/../images/og_img.jpg">
+	<title>지에스네오텍</title>
+	<link href="static/css/reset.css" rel="stylesheet" />
+	<link href="static/css/aos.css" rel="stylesheet" />
+	<link href="static/css/swiper.min.css" rel="stylesheet" />
+	<link href="static/css/common.css" rel="stylesheet" />
+	<link href="static/css/contents.css" rel="stylesheet" />
+	<link href="static/css/main.css" rel="stylesheet" />
+	<script src="static/js/common.js" type="text/javascript"></script>
+	<script src="static/js/ui.js" type="text/javascript"></script>
+ 	<script src="static/js/aos.js"></script>
+  
+	<style>
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+  </style>
+</head>
+
+<body>
+	<div id="skipnav">
+		<a href="#contents">본문 바로가기</a>
+	</div>
+	<header class="main" id="myHeader">
+		<!-- PC header -->
+		<div class="PCheader">
+			<div class="inner">
+				<h1><a href="index.html">지에스네오텍</a></h1>
+				<ul class="utilList">
+					<li><a href="platform/PL_2010.html" class="mu1">COMPANY</a></li>
+					<li><a href="nhAPI/AP_1010.html" class="mu4">SOLUTION</a></li>
+					<li><a href="promotion/PM_1010.html" class="mu10">PARTNERS</a></li>
+					<li><a href="https://developers.nonghyup.com" target="_blank" class="mu13">CONTACT US</a></li>
+				</ul>
+			</div>
+			<div class="gnbWrap">
+				<div class="inner">
+					<ul class="gnbList">
+						<li>
+							<ul class="gnbDept">
+								<li><a href="platform/PL_2010.html">지에스네오텍 소개</a></li>
+								<li><a href="platform/PL_3010.html">지에스네오텍 구성</a></li>
+							</ul>
+						</li>
+						<li>
+							<ul class="gnbDept">
+								<li class="etc"><a href="javascript:;" title="축소됨" class="mu5">IPT/TPCC</a>
+									<ul class="gnbDept2">
+										<li><a href="nhAPI/AP_1010.html">IPT/TPCC</a></li>
+										<li><a href="nhAPI/AP_2010.html">ZENDESK</a></li>
+									</ul>
+								</li>
+								<!--<li class="etc"><a href="javascript:;" title="축소됨">간편결제</a>
+									<ul class="gnbDept2">
+										<li><a href="nhAPI/AP_8010.html">카드승인</a></li>
+										<li><a href="nhAPI/AP_9010.html">지로공과금 납부</a></li>
+									</ul>
+								</li>-->
+								
+								<li><a href="nhAPI/AP_1810.html" class="mu6">전체메뉴</a></li>
+							</ul>
+						</li>
+						<li>
+							<ul class="gnbDept">
+								<li><a href="nhExample/EP_1010.html" class="mu8">PARTNERS</a></li>
+							</ul>
+						</li>
+						<li>
+							<ul class="gnbDept">
+								<li><a href="promotion/PM_1010.html" class="mu11">CONTACT US</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- //PC header -->
+
+		<!-- 모바일 header
+		<div class="Mheader">
+			<div class="header">
+				<a href="index.html" role="button" aria-label="지에스네오텍"><h2 class="titHead">지에스네오텍</h2></a>
+				<button type="button" class="btnSide">메뉴보기
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+			<!-- hide menu
+			<div class="innerSide" aria-hidden="true">
+				<div class="layWrap">
+					<div class="topArea">
+						<a href="index.html" role="button" class="btnHome">지에스네오텍</a>
+						<button type="button" class="btnClose">메뉴닫기</button>
+					</div>
+					<nav class="navArea">
+						<ul class="menuDepth1">
+							<li>
+								<a href="javascript:;" role="button" aria-expanded="false">지에스네오텍</a>
+								<ul class="menuDepth2">
+									<li><a href="platform/PL_1010.html" role="button">CEO인사말</a></li>
+									<li><a href="platform/PL_2010.html" role="button">지에스네오텍 소개</a></li>
+									<li><a href="platform/PL_3010.html" role="button">지에스네오텍 구성</a></li>
+									<li><a href="platform/PL_4010.html" role="button">지에스네오텍 차이점</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:;" role="button" aria-expanded="false">오픈API</a>
+								<ul class="menuDepth2">
+									<li><a href="nhAPI/AP_1010.html" role="button">핀-어카운트 / 핀-카드</a></li>
+									<li><a href="nhAPI/AP_2010.html" role="button">출금이체</a></li>
+									<li><a href="nhAPI/AP_3010.html" role="button">입금이체</a></li>
+									<li><a href="nhAPI/AP_4010.html" role="button">예금주조회</a></li>
+									<li><a href="nhAPI/AP_5010.html" role="button">금융정보</a></li>
+									<li><a href="nhAPI/AP_6010.html" role="button">가상계좌</a></li>
+									<li><a href="nhAPI/AP_7010.html" role="button">자금출처관리</a></li>
+									<li><a href="nhAPI/AP_8010.html" role="button">카드승인</a></li>
+									<li><a href="nhAPI/AP_9010.html" role="button">지로공과금 납부</a></li>
+									<li><a href="nhAPI/AP_1110.html" role="button">카드조회</a></li>
+									<li><a href="nhAPI/AP_1210.html" role="button">P2P자금관리</a></li>
+									<li><a href="nhAPI/AP_1310.html" role="button">소상공인 외상매출 담보</a></li>
+									<li><a href="nhAPI/AP_1410.html" role="button">예치금 자금관리</a></li>
+									<li><a href="nhAPI/AP_1510.html" role="button">환전</a></li>
+									<li><a href="nhAPI/AP_1710.html" role="button">관리/모니터링</a></li>
+									<li><a href="nhAPI/AP_1810.html" role="button">전체 API</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:;" role="button" aria-expanded="false">활용예시</a>
+								<ul class="menuDepth2">
+									<li><a href="nhExample/EP_1010.html" role="button">활용예시</a></li>
+									<li><a href="nhCase/CE_1010.html" role="button">적용사례</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:;" role="button" aria-expanded="false">홍보센터</a>
+								<ul class="menuDepth2">
+									<li><a href="promotion/PM_1010.html" role="button">홍보영상</a></li>
+									<li><a href="promotion/PM_2010.html" role="button">HISTORY</a></li>
+								</ul>
+							</li>
+							<li class="etc"><a href="https://developers.nonghyup.com" target="_blank" role="button">개발자센터</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!-- //hide menu 
+		</div>
+		<!-- //모바일 header -->
+	</header>
+
+	<div class="wrap main">
+
+		<!-- pc영역 -->
+		<div class="pcCon">
+			<!-- scene1 -->
+			<div class="section scene1">
+				<!--<i class="bgico1 motionc"></i>
+				<i class="bgico2 motiond"></i>
+				<i class="bgico3 motiona" ></i>
+				<i class="bgico4 motionb"></i>
+				<i class="bgico5 motione"></i>
+				<i class="bgico6 motionf"></i>-->
+				<div class="inner">
+					<div class="mainSlider1">
+						<div>
+							<div class="textBox">
+								<p class="h3txt" data-aos="fade-down" data-aos-duration="2500">기업의 통신 환경</p>
+								<p class="h2txt" data-aos="fade-down" data-aos-duration="1500">주)지에스네오텍서비스에서</p>
+								<p class="subtxt" data-aos="fade-up" data-aos-duration="2000">
+									<span>특화된 기술력으로 </span>
+									<span>혁신을 가져오고 있습니다.</span>
+								</p>
+								<a href="sub/sub_1.html" target="_blank" role="button" data-aos="fade-up" data-aos-duration="2000">회사소개 바로가기</a>
+							</div>
+						</div>
+                        <div>
+							<div class="textBox">
+								<p class="h3txt">효율적인 정보보안</p>
+								<p class="h2txt">통합보안플랫폼</p>
+								<p class="subtxt">
+									<span>지에스네트웍서비스는 기업의효율적인 정보보호를 위한</span>
+									<span>통합보안플랫폼을 제공합니다.</span>
+								</p>
+							</div>
+						</div>
+						<div>
+							<div class="textBox">
+								<p class="h3txt">ICT기반사업의 </p>
+								<p class="h2txt">4차 산업혁명을</p>
+								<p class="subtxt">
+									<span>주도해 나가는 국가대표 전문기업!</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+			<!-- //scene1 -->
+			<!-- scene2  
+			<div class="section scene2">
+				<div class="inner">
+					<h3 class="h3Tit" data-aos="fade-right" data-aos-offset="30" data-aos-easing="ease-in-sine" id="contents" tabindex="0">통합보안플랫폼</h3>
+					<p class="psub" data-aos="fade-left" data-aos-offset="30" data-aos-easing="ease-in-sine">지에스네오텍에서 제공하는 효율적인 정보보호</p>
+					<ul class="onApi">
+						<li>
+							<a href="javascript:;">
+								<i class="ico1" data-aos="fade-down" data-aos-offset="150" data-aos-easing="ease-in-sine"></i>
+								<p class="tit" data-aos="fade-up" data-aos-offset="50" data-aos-easing="ease-in-sine">공통</p>
+								<div class="onDetail">
+									<button type="button" onclick="location.href='nhAPI/AP_1010.html'" class="ico1_1"><span>핀-어카운트<br />/핀-카드</span></button>
+									<button type="button" onclick="location.href='nhAPI/AP_2010.html'" class="ico1_2"><span>출금이체</span></button>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<i class="ico2" data-aos="fade-down" data-aos-offset="150" data-aos-easing="ease-in-sine"></i>
+								<p class="tit" data-aos="fade-up" data-aos-offset="50" data-aos-easing="ease-in-sine">문서보안</p>
+								<div class="onDetail">
+									<button type="button" onclick="location.href='nhAPI/AP_8010.html'" class="ico2_1"><span>신용카드</span></button>
+									<button type="button" onclick="location.href='nhAPI/AP_9010.html'" class="ico2_2"><span>지로공과금납부</span></button>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<i class="ico3" data-aos="fade-down" data-aos-offset="150" data-aos-easing="ease-in-sine"></i>
+								<p class="tit" data-aos="fade-up" data-aos-offset="50" data-aos-easing="ease-in-sine">영역보안</p>
+								<div class="onDetail">
+									<button type="button" onclick="location.href='nhAPI/AP_1110.html'" class="ico3_1"><span>카드조회(개인)</span></button>
+									<button type="button" onclick="location.href='nhAPI/AP_1110.html'" class="ico3_2"><span>카드조회(기업)</span></button>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<i class="ico4" data-aos="fade-down" data-aos-offset="150" data-aos-easing="ease-in-sine"></i>
+								<p class="tit" data-aos="fade-up" data-aos-offset="50" data-aos-easing="ease-in-sine">파일무해화</p>
+								<div class="onDetail">
+									<button type="button" onclick="location.href='nhAPI/AP_1210.html'" class="ico4_1"><span>P2P자금관리</span></button>
+									<button type="button" onclick="location.href='nhAPI/AP_1310.html'" class="ico4_2"><span>소상공인외상<br />매출담보</span></button>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<i class="ico5" data-aos="fade-down" data-aos-offset="150" data-aos-easing="ease-in-sine"></i>
+								<p class="tit" data-aos="fade-up" data-aos-offset="50" data-aos-easing="ease-in-sine">문서중앙화</p>
+								<div class="onDetail">
+									<button type="button" onclick="location.href='nhAPI/AP_1410.html'" class="ico5_1"><span>예치금<br />자금관리</span></button>
+									<button type="button" onclick="location.href='nhAPI/AP_1510.html'" class="ico5_2"><span>환전</span></button>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<i class="ico6" data-aos="fade-down" data-aos-offset="150" data-aos-easing="ease-in-sine"></i>
+								<p class="tit" data-aos="fade-up" data-aos-offset="50" data-aos-easing="ease-in-sine">관리</p>
+								<div class="onDetail">
+									<button type="button" onclick="location.href='nhAPI/AP_1710.html'" class="ico6_1"><span>모니터링</span></button>
+									<button type="button" onclick="location.href='nhAPI/AP_1710.html'" class="ico6_2"><span>약정관리</span></button>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- //scene2 -->
+			<!-- scene3 -->
+			<div class="section scene3">
+				<i class="bgico1" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="3000"></i>
+				<i class="bgico2" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="3000"></i>
+				<div class="inner">
+					<h3 class="h3Tit" data-aos="fade-right" data-aos-offset="30" data-aos-easing="ease-in-sine">지에스네오텍 서비스</h3>
+					<p class="psub" data-aos="fade-left" data-aos-offset="30" data-aos-easing="ease-in-sine">SI 사업과 네트워크 구축및 유지보수, 인프라구축과 솔루션까지 맞춤형 기업 솔루션을 제공합니다.</p>
+					<ul>
+						<li>
+							<a href="promotion/PM_2010.html" target="_self" alt=" 바로가기">
+								<img src="static/images/main/scene5_shape1.png" alt="" data-aos="fade-up" data-aos-offset="30" data-aos-easing="ease-in-sine"/>
+								<div class="txtBox">
+									<p class="txt1" data-aos="fade-down">SOLUTION</p>
+									<p class="txt2" data-aos="fade-down">IPT/IPCC<span>지능형 연락 라우팅</span></p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="promotion/PM_2010.html" target="_self" alt=" 바로가기">
+								<img src="static/images/main/scene5_shape2.png" alt="" data-aos="fade-up" data-aos-offset="30" data-aos-easing="ease-in-sine" />
+								<div class="txtBox">
+									<p class="txt1" data-aos="fade-down">젠디스크</p>
+									<p class="txt2" data-aos="fade-down">고객문의 통합관리시스템,<span> 맞춤형 프라이빗앱개발</span></p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="promotion/PM_2010.html" target="_self" alt="바로가기">
+								<img src="static/images/main/scene5_shape3.png" alt="" data-aos="fade-up" data-aos-offset="30" data-aos-easing="ease-in-sine" />
+								<div class="txtBox">
+									<p class="txt1" data-aos="fade-down">Quad Miners</p>
+									<p class="txt2" data-aos="fade-down">사이버보안위협<span>탐지및 대응 솔루션</span></p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="promotion/PM_2010.html" target="_self" alt=" 바로가기">
+								<img src="static/images/main/scene5_shape4.png" alt="" data-aos="fade-up" data-aos-offset="30" data-aos-easing="ease-in-sine" />
+								<div class="txtBox">
+									<p class="txt1" data-aos="fade-down">AXGATE</p>
+									<p class="txt2" data-aos="fade-down">논라적 가상화 <span>성능 저하없는 고성능 제품</span></p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- //scene3 -->
+			<!-- scene4 -->
+			<div class="section scene4">
+				<i class="bgico1" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="3000"></i>
+				<i class="bgico2" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="3000"></i>
+				<i class="bgico3" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="3000"></i>
+				<div class="inner">
+					<h3 class="h3Tit" data-aos="fade-right" data-aos-offset="30" data-aos-easing="ease-in-sine">지에스네오텍 Product</h3>
+					<p class="psub" data-aos="fade-left" data-aos-offset="30" data-aos-easing="ease-in-sine">ICT기반사업의 4차 산업혁명을
+						<span>주도해 나가는 국가대표 전문기업!</span>
+					</p>
+					<div class="sldView mainSlider2">
+						<div>
+							<i class="ico3" data-aos="fade-up"></i>
+							<div class="txtBox">
+								<p class="txt1" data-aos="fade-left">IPT/IPCC</p>
+								<p class="txt2" data-aos="fade-right">IP Telephony Solution (IPT) 과 IP네트워크를 통해 <span> 지능형 콜센터 솔루션인 IPCC을 제공합니다</span></p>
+							</div>
+						</div>
+						<div>
+							<i class="ico1"></i>
+							<div class="txtBox">
+								<p class="txt1">Cisco</p>
+								<p class="txt2">대기업 및 중소기업에 맞게 설계된 광범위한 제품과<span>네트워킹 솔루션을 제공합니다.</span></p>
+							</div>
+						</div>
+						<div>
+							<i class="ico2"></i>
+							<div class="txtBox">
+								<p class="txt1">Fortinet</p>
+								<p class="txt2">끊임없이 진화하는 위협으로부터 네트워크, 사용자 및 데이터를 보호하는 고성능 네트워크 보안 솔루션을 제공합니다.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //scene4 -->
+			<!-- scene5 -->
+			<div class="section scene5">
+				<div class="inner">
+					<h3 class="h3Tit" data-aos="fade-right" data-aos-offset="30" data-aos-easing="ease-in-sine">with 지에스네오텍</h3>
+					<p class="psub" data-aos="fade-left" data-aos-offset="30" data-aos-easing="ease-in-sine">지에스네오텍의   제휴업체와 서비스를 소개합니다</p>
+					<div class="ciList2">
+						<ul>
+							<li><img src="static/images/main/ci_slide01off.png" alt="비바리퍼블리카(Toss)" /></li>
+							<li><img src="static/images/main/ci_slide02off.png" alt="더즌(카카오페이)" /></li>
+							<li><img src="static/images/main/ci_slide03off.png" alt="sk플래닛(11번가)" /></li>
+							<li><img src="static/images/main/ci_slide04off.png" alt="레이니스트(뱅크샐러드)" /></li>
+							<li><img src="static/images/main/ci_slide05off.png" alt="8퍼센트" /></li>
+                            <li><img src="static/images/main/ci_slide01off.png" alt="비바리퍼블리카(Toss)" /></li>
+							<li><img src="static/images/main/ci_slide02off.png" alt="더즌(카카오페이)" /></li>
+							<li><img src="static/images/main/ci_slide03off.png" alt="sk플래닛(11번가)" /></li>
+							<li><img src="static/images/main/ci_slide04off.png" alt="레이니스트(뱅크샐러드)" /></li>
+							<li><img src="static/images/main/ci_slide05off.png" alt="8퍼센트" /></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- //scene5 -->
+		</div>		
+		<!-- //pc영역 -->
+
+		<!-- moblie영역 
+		<div class="moCon">
+			<!-- scene1
+			<div class="section scene1">
+				<i class="bgico1 motionc"></i>
+				<i class="bgico2 motiond"></i>
+				<i class="bgico3 motiona" ></i>
+				<i class="bgico4 motionb"></i>
+				<i class="bgico5 motione"></i>
+				<i class="bgico6 motionf"></i>
+				<div class="inner">
+					<div class="mainSlider3">
+						<div>
+							<div class="textBox">
+								<p class="h3txt" data-aos="fade-down" data-aos-duration="2500">자유로운 개발환경을 지원하는</p>
+								<p class="h2txt" data-aos="fade-down" data-aos-duration="1500">개발자센터 오픈</p>
+								<a href="https://developers.nonghyup.com" target="_blank" role="button" data-aos="fade-up" data-aos-duration="2000">개발자사이트 바로가기</a>
+							</div>
+						</div>
+						<div>
+							<div class="textBox">
+								<p class="h3txt">금융을 열어 세상을 바꾸다</p>
+								<p class="h2txt">지에스네오텍</p>
+							</div>
+						</div>
+                        <div>
+							<div class="textBox">
+								<p class="h3txt">금융을 열어 세상을 바꾸다</p>
+								<p class="h2txt">지에스네오텍</p>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+			<!-- //scene1
+
+			<!-- scene2  
+			<div class="section scene2">
+				<div class="inner">
+					<h3 class="h3Tit" data-aos="fade-right" data-aos-offset="30" data-aos-easing="ease-in-sine">통합보안플랫폼</h3>
+					<p class="psub" data-aos="fade-left" data-aos-offset="30" data-aos-easing="ease-in-sine">지에스네오텍에서 제공하는 효율적인 정보보호</p>
+					<ul class="onApi">
+						<li data-aos="flip-left" data-aos-easing="ease-in-sine" class="on">
+								<i class="ico1"></i>
+								<p class="tit">공통</p>
+								<div class="onDetail">
+									<button type="button" onclick="location.href='nhAPI/AP_1010.html'" class="ico1_1"><span>핀-어카운트<br />/핀-카드</span></button>
+									<button type="button" onclick="location.href='nhAPI/AP_2010.html'" class="ico1_2"><span>출금이체</span></button>
+								</div>
+						</li>
+						<li data-aos="flip-right" data-aos-easing="ease-in-sine" class="on">
+								<i class="ico2"></i>
+								<p class="tit">간편결제</p>
+								<div class="onDetail">
+									<button type="button" onclick="location.href='nhAPI/AP_8010.html'" class="ico2_1"><span>신용카드</span></button>
+									<button type="button" onclick="location.href='nhAPI/AP_9010.html'" class="ico2_2"><span>지로공과금납부</span></button>
+								</div>
+						</li>
+						<li data-aos="flip-left" data-aos-easing="ease-in-sine" class="on">
+								<i class="ico3"></i>
+								<p class="tit">자산관리</p>
+								<div class="onDetail">
+									<button type="button" onclick="location.href='nhAPI/AP_1110.html'" class="ico3_1"><span>카드조회<br />(개인)</span></button>
+									<button type="button" onclick="location.href='nhAPI/AP_1110.html'" class="ico3_2"><span>카드조회<br />(기업)</span></button>
+								</div>
+						</li>
+						<li data-aos="flip-right" data-aos-easing="ease-in-sine" class="on">
+								<i class="ico4"></i>
+								<p class="tit">P2P</p>
+								<div class="onDetail">
+									<button type="button" onclick="location.href='nhAPI/AP_1210.html'" class="ico4_1"><span>P2P자금관리</span></button>
+									<button type="button" onclick="location.href='nhAPI/AP_1310.html'" class="ico4_2"><span>소상공인외상<br />매출담보</span></button>
+								</div>
+						</li>
+						<li data-aos="flip-left" data-aos-easing="ease-in-sine" class="on">
+								<i class="ico5"></i>
+								<p class="tit">기타제휴</p>
+								<div class="onDetail">
+									<button type="button" onclick="location.href='nhAPI/AP_1410.html'" class="ico5_1"><span>예치금<br />자금관리</span></button>
+									<button type="button" onclick="location.href='nhAPI/AP_1510.html'" class="ico5_2"><span>환전</span></button>
+								</div>
+						</li>
+						<li data-aos="flip-right" data-aos-easing="ease-in-sine" class="on">
+								<i class="ico6"></i>
+								<p class="tit">관리</p>
+								<div class="onDetail">
+									<button type="button" onclick="location.href='nhAPI/AP_1710.html'" class="ico6_1"><span>모니터링</span></button>
+									<button type="button" onclick="location.href='nhAPI/AP_1710.html'" class="ico6_2"><span>약정관리</span></button>
+								</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- //scene2
+
+			<!-- scene3 
+			<div class="section scene3">
+				<i class="bgico1" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500"></i>
+				<i class="bgico2" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500"></i>
+				<div class="inner">
+					<h3 class="h3Tit" data-aos="fade-right" data-aos-offset="30" data-aos-easing="ease-in-sine">지에스네오텍 HISTORY</h3>
+					<p class="psub" data-aos="fade-left" data-aos-offset="30" data-aos-easing="ease-in-sine">지에스네오텍의 지난 3년간의 성적표를 설명합니다.(2019년 말 기준)</p>
+					<ul role="tablist">
+						<li class="on"><button type="button" data-aos="fade-right" data-aos-duration="1000" role="tab" aria-selected="true">183 <span>SERVICE</span></button>
+							<div class="simgBox" role="tabpanel">
+								<a href="promotion/PM_2010.html" target="_self" alt="HISTORY 바로가기">
+									<img src="static/../images/main/scene5_shape1.png" alt="" style="width: 87px;height: 106px" data-aos="fade-down" data-aos-duration="1500" />
+									<p class="txt2" data-aos="fade-up" data-aos-duration="1000">서비스API 140개, 관리API 43개<span>총 183개 API를 서비스중입니다.</span></p>
+								</a>
+							</div>
+						</li>
+						<li><button type="button" data-aos="fade-right" data-aos-duration="1400" role="tab" aria-selected="false">200 <span>INCREASE</span></button>
+							<div class="simgBox" role="tabpanel">
+								<a href="promotion/PM_2010.html" target="_self" alt="HISTORY 바로가기">
+									<img src="static/../images/main/scene5_shape2.png" alt="" style="width: 90px;height: 92px" />
+									<p class="txt2">거래건수는 150배, 거래액은 200배<span>성장했습니다.</span></p>
+								</a>
+							</div>
+						</li>
+						<li><button type="button" data-aos="fade-right" data-aos-duration="1800" role="tab" aria-selected="false">62 <span>INUSE</span></button>
+							<div class="simgBox" role="tabpanel">
+								<a href="promotion/PM_2010.html" target="_self" alt="HISTORY 바로가기">
+									<img src="static/../images/main/scene5_shape3.png" alt="" style="width: 111px;height: 83px" />
+									<p class="txt2">총 62개의 기업과 기관에서 사용중<span>입니다.</span></p>
+								</a>
+							</div>
+						</li>
+						<li><button type="button" data-aos="fade-right" data-aos-duration="2200" role="tab" aria-selected="false">33 <span>PROTECT</span></button>
+							<div class="simgBox" role="tabpanel">
+								<a href="promotion/PM_2010.html" target="_self" alt="HISTORY 바로가기">
+									<img src="static/../images/main/scene5_shape4.png" alt="" style="width: 72px;height: 83px" />
+									<p class="txt2">33개의 정보보호 및 보안가이드를<span>마련하여 적용하고 있습니다.</span></p>
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- //scene3 
+
+			<!-- scene4 
+			<div class="section scene4">
+				<i class="bgico1" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500"></i>
+				<i class="bgico2" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500"></i>
+				<i class="bgico3" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500"></i>
+				<div class="inner">
+					<h3 class="h3Tit" data-aos="fade-right" data-aos-offset="30" data-aos-easing="ease-in-sine">지에스네오텍 개발자센터</h3>
+					<p class="psub" data-aos="fade-left" data-aos-offset="30" data-aos-easing="ease-in-sine">오픈플랫폼의 API를 활용하여 앱을 개발할 때
+						<span>API에 접근하고 테스트 해볼 수 있는 편리한 환경을 제공합니다</span>
+					</p>
+					<div class="sldView mainSlider4">
+						<div>
+							<h4 data-aos="fade-left">API<br />소개</h4>
+							<i class="ico3" data-aos="fade-up"></i>
+							<div class="txtBox" data-aos="fade-down">
+								<p class="txt1">API 소개</p>
+								<p class="txt2">제공 중인 API목록 및 프로세스 단계별 흐름도를 통해 API를 설명합니다.</p>
+							</div>
+						</div>
+						<div>
+							<h4>API 개발<br />가이드</h4>
+							<i class="ico1"></i>
+							<div class="txtBox">
+								<p class="txt1">API 개발 가이드</p>
+								<p class="txt2">지에스네오텍의 API 사용방법 및 예제를 제공해 드립니다.</p>
+							</div>
+						</div>
+						<div>
+							<h4>REST API<br />도구</h4>
+							<i class="ico2"></i>
+							<div class="txtBox" style="bottom: 15px">
+								<p class="txt1">REST API 도구</p>
+								<p class="txt2">별도의 클라이언트 프로그램 없이 Restful 방식의 오픈API를 웹에서 테스트 할 수 있는 도구와 환경을 제공합니다. 또한, GitHub를 통해 전 세계 개발자들과 소스코드를 공유하고 함께 소통할 수 있습니다.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //scene4 
+
+			<!-- scene5 
+			<div class="section scene5">
+				<div class="inner">
+					<h3 class="h3Tit" data-aos="fade-right" data-aos-offset="30" data-aos-easing="ease-in-sine">with 지에스네오텍</h3>
+					<p class="psub" data-aos="fade-left" data-aos-offset="30" data-aos-easing="ease-in-sine">지에스네오텍의 API를 사용하는 제휴업체와 <span>APP서비스를 소개합니다</span></p>
+					<div class="slider3">
+						<div class="swiper-pagination3"></div>
+						<div class="swiper-container" data-aos="fade-up" data-aos-offset="30" data-aos-easing="ease-in-sine">
+							<div class="swiper-wrapper">	
+								<div class="swiper-slide"><img src="static/../images/main/ci_slide01off.png" alt="비바리퍼블리카(Toss)" /></div>
+								<div class="swiper-slide"><img src="static/../images/main/ci_slide06off.png" alt="팝펀딩" /></div>
+								<div class="swiper-slide"><img src="static/../images/main/ci_slide02off.png" alt="더즌(카카오페이)" /></div>
+								<div class="swiper-slide"><img src="static/../images/main/ci_slide07off.png" alt="나이스비즈니스플랫폼" /></div>
+								<div class="swiper-slide"><img src="static/../images/main/ci_slide03off.png" alt="sk플래닛(11번가)" /></div>
+								<div class="swiper-slide"><img src="static/../images/main/ci_slide08off.png" alt="주택관리공단" /></div>
+								<div class="swiper-slide"><img src="static/../images/main/ci_slide04off.png" alt="레이니스트(뱅크샐러드)" /></div>
+								<div class="swiper-slide"><img src="static/../images/main/ci_slide09off.png" alt="강원신용보증재단" /></div>
+								<div class="swiper-slide"><img src="static/../images/main/ci_slide05off.png" alt="8퍼센트" /></div>						
+								<div class="swiper-slide"><img src="static/../images/main/ci_slide10off.png" alt="한국정보통신" /></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //scene5 
+		</div>
+		<!-- //moblie영역 -->
+
+		<div class="pginner">
+			<button type="button" class="pageTop" title="맨위로 이동" role="button">Top</button>
+		</div>
+	</div>
+
+	<footer class="main">
+		<div class="PCfooter">
+			<div class="inner">
+				<div class="footLogo">지에스네오텍</div>
+				<div class="footerAbout">
+					<!-- <ul>
+						<li><a href="">Contact Us</a></li>
+						<li><a href="">개인정보처리방침</a></li>
+						<li><a href="">사이트맵</a></li>
+					</ul> -->
+					<address>
+						대표전화 02-2084-5600, 서울시 구로구 경인로 590, 403호(신도림동, 아주빌딩)
+					</address>
+					<p>Copyright @. All Right Reserved.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- footer 
+		<div class="Mfooter">
+			<div class="footer">
+				<div class="footarea">
+					<button type="button" class="footLogo">지에스네오텍</button>
+					<div class="footAdd" aria-hidden="true">
+						<address>서울시 구로구 경인로 590, 403호(신도림동, 아주빌딩)</address>
+						<p>대표전화 : 02-2084-5600</p>
+					</div>
+					<p class="txt">Copyright @. All Right Reserved.</p>
+				</div>				
+			</div>
+
+			
+		</div>
+		<!-- //footer -->
+	</footer>
+	<script type="text/javascript">
+		AOS.init({
+		  duration: 1200,
+		})
+	</script>
+</body>
+</html>
